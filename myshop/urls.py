@@ -6,5 +6,5 @@ app_name = 'myshop'
 urlpatterns = [
 
     path('', views.index, name='index'),  # вывод главной страницы
-    path('client_orders/', views.client_orders, name='client_orders'),
+    path('client/<int:client_id>/', views.client_order, name='client_order'),
 ]
